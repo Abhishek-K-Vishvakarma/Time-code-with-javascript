@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cteate Time</title>
+  <style>
+    body{
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      min-height: 100vh;
+      background-color: black;
+    }
+    h1{
+      background-color: aqua;
+      color: red;
+    }
+    p{
+      background-color: blue;
+      font-size: 50px;
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1><strong>Time</strong> in <strong>Present Time</strong></h1>
+  <p id="abhi"></p>
+  <script>
+     function date(){
+      let d = new Date();
+      document.getElementById('abhi').innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+     }
+     setInterval(date, 1000);
+  </script>
+</body>
+</html>
