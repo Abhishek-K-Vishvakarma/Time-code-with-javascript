@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallBack Function in JavaScript</title>
+</head>
+<body>
+  <h1>CallBack Function in <b>JavaScript!</b></h1>
+  <h2>Please check output in the console... </h2>
+  <h3> 1.  First - right click and choose option inspect in bottom.</h3>
+  <h3>2.  Second - click inspect and visible of console top-left-Element and  top-right-console...</h3>
+
+ <script>
+     // CallBack Function is a waiting for another or other Function Calling in System code.
+     // CallBack Function Feched data from another component.
+     function FName1(call1){
+          console.log(" First Calling of FName1");
+
+          call1();
+     }
+     
+     function FName2(call2){
+          console.log(" Second Calling of FName2");
+     } 
+
+     FName1(FName2);
+
+ </script> 
+</body>
+</html>
